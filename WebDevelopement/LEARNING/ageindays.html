@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        width: 75%;
+        text-align: center;
+    }
+    
+    
+    .btn{
+        background-color: bisque;
+        padding: 12px;
+    }
+    .container{
+
+    display: flex;
+        justify-content: space-around;
+      
+
+    }
+    .btn2{
+        background-color: red;
+        font-size: 14px;
+        border-radius: 23px;
+        border: 2px solid wheat;
+    }
+    .result{
+        border: 3px solid black;
+        background-color:darkgray ;
+        color: white;
+        font-size: 15px;
+    }
+</style>
+<body>
+    <p id="para">
+    </p>
+    <div class="container">
+
+        <button class="btn" onclick="ageindayss()">
+            click me 
+        </button>
+        <button  class="btn2" onclick="reset()"> reset</button>
+    </div>
+    <div class="result" id="res">
+         
+    </div>
+
+</body>
+
+<script >
+    function ageindayss()
+    {
+        let ageinyears= prompt("your birthyear");
+        let days= (2023-ageinyears)*365;
+        document.getElementById('res').innerHTML="your age in days is " +days;
+    }
+    function reset()
+    {
+        document.getElementById("res").style.display = "none";
+    }
+</script>
+</html>

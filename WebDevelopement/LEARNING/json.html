@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>this is a container</h1>
+    </div>
+    <script>
+        let json={
+            name:"aniket",
+            college: "dit",
+            year: "3rd"
+        }
+        console.log(json);
+        let json1 = JSON.stringify(json);
+        // convert object to strings
+        console.log(json1);
+        let json2=JSON.parse(json1);
+        // convert to object from string
+        console.log(json2);
+
+         let newjsonstr=json1.replace("aniket","mello");
+        console.log(newjsonstr);
+    </script>
+</body>
+</html>

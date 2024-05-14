@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+        /* display: flex; */
+        display: flex;
+        width: 100%;
+        /* background-color: grey;
+         */
+         color: white;
+    }
+    .left{
+        width: 33%;
+        color: black;
+    }
+    .sign{
+        background-color: green;
+        font-size: 2dvb;
+        color: white;
+        width: 120px;
+        height: 50px;
+        border-radius: 12px;
+        /* top: 201px;/ */
+        margin-top: 20px;
+    }
+
+    .data {
+        display: flex;
+        justify-content: right;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        /* align-items: flex-end; */
+        /* width: 120px; */
+        width: 33%;
+        text-shadow: #D3D3D3;
+    }
+
+    form {
+        display: none;
+        border: 2px solid black;
+        margin: 0px auto;
+        width: 150px;
+        height: auto;
+
+        text-align: center;
+        /* height: 75%; */
+        justify-content: center;
+        border-radius: 14px;
+        border: 1px grey;
+        background-color: #D3D3D3;
+    }
+
+    .submit {
+        font-size: 15px;
+        background-color: green;
+        border-radius: 12px;
+        /* font-size: ; */
+        color: white;
+        width: 120px;
+        margin: 0px auto;
+    }
+
+    input {
+        /* width: 120px; */
+        align-items: center;
+    }
+
+    .nav{
+        position: sticky;
+  align-items: center;
+  display: block;
+  width: 33%;
+  margin: 12px auto;
+  /* border: 2px solid green; */
+  /* top: 18px; */
+    }
+    nav li {
+  display: inline-block;
+  /* font-size: 25px; */
+  padding: 12px 5px;
+}
+.nav li a {
+  text-decoration: none;
+
+  padding: 4px;
+
+}
+.nav li a:hover {
+  text-decoration: underline;
+  background-color: grey;
+}
+
+.container-2{
+    display: flex;
+    width: 100%;
+}
+.para-2,.para-1{
+    width: 33%;
+}
+#para{
+    width: 33%;
+}
+</style>
+
+<body>
+    <div class="container">
+
+
+        <div class="left">
+            <h1>hehe</h1>
+        </div>
+        <div class="nav">
+                
+            <nav>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">INTRODUCTION</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+                
+            </nav>
+    
+    </div>
+
+        <div class="data" id="data">
+            <button class="sign" id="sign" onclick="SINGUP()">
+                Sign Up
+            </button>
+        </div>
+
+    </div>  
+
+<div class="container-2">
+<p  class="para-1">
+
+</p>
+<p class="para-2">
+
+</p>
+    <div id="para">
+        <form action=" " id="form">
+            FULLNAME :<input type="text" id="ff" placeholder="ENTER YOUR NAME"> <br>
+            AGE :<input type="number" min="1" name="" id="age" placeholder="ENTER YOUR AGE"><br>
+            <button type="button" class="submit" id="submit" onclick="sub()">
+                SUBMiT
+            </button>
+        </form>
+    </div>>
+</div>
+ </body>
+
+
+
+
+
+
+
+<script>
+    // for(let i=0;i=0;i++);
+    let i=1;
+    let btn = document.getElementById('form');
+    let btn1 = document.getElementById('sign');
+    function SINGUP() {
+        if (btn.style.display = 'none') {
+            btn.style.display = 'flex';
+            btn.style.flexDirection = 'column';
+            btn.style.justifyContent='flex-end';
+            btn1.style.display = 'none';
+        }
+        // let para=document.getElementById('para').innerHTML=;
+    }
+    function sub() {
+        let sub = document.getElementById('submit');
+        let val1 = document.getElementById('ff');
+        let val = document.getElementById('age');
+        console.log("THE NAME AT "+i++ +" IS :" +  val1.value + "\n" + "AGE IS " + val.value);
+        btn.style.display = 'none';
+        btn1.style.display = 'block';
+    }
+
+</script>
+
+</html>

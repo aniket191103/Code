@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/" class="form">
+           Full Name: <input type="text" placeholder="  Enter Your Full Name" id="Full" onsubmit="valid()"><br><br><br>
+          Age  <input type="number"  max="99" min="0"><br>
+         Submit <input type="submit" onclick="valid()">
+        </form>
+    </div>
+</body>
+<script>
+let btn=document.getElementById('Full').value;
+function valid(){
+    if(btn===""){
+        alert('ENTER NAME')
+    }
+}
+</script>
+</html>

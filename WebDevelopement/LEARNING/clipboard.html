@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLip Board</title><link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<style>
+    .btn{
+        display: flex;
+        flex-direction: row;
+    }
+   .para{
+    text-align: justify;
+    font-size: 25px;
+    background-color: black;
+    width:150px;
+    height: 100%;
+    color: white;
+    }
+    .copy{        
+        margin: auto;
+        align-self: center;          
+    }
+</style>
+<body>
+    
+
+    <div class="btn">
+
+        <p class="para">
+            teacher> db.teacher.updateOne({Name:"DAYUM"},{$set:{Age:232}})
+            {
+              acknowledged: true,
+              insertedId: null,
+              matchedCount: 1,
+              modifiedCount: 1,
+              upsertedCount: 0
+            }
+            teacher> db.teacher.find()
+            
+            </p>
+        <button class="copy" onclick="Copy()" style="width: 230px;">
+            Click to Copy
+        </button>
+    </div>
+</body>
+<script>
+    function Copy(){
+        var text = document.querySelector(".para").innerText;
+        navigator.clipboard.writeText(text)
+        alert("Copied to cipboard")
+    }
+
+</script>
+
+</html>

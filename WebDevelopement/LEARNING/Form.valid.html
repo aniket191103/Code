@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>VALID</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <style>
+    #submit{
+            border-radius: 12px;
+            padding: 8px;
+            font-size: 16px;
+        }
+        input{
+            border-radius: 12px;
+            margin: 10px;
+        }
+        #age{
+            padding: 3px;
+        }
+        #result{
+            font-size: 25px;
+        }
+    ::marker{
+        background-color: red;;
+    }
+    </style>
+    <body>
+        <div class="container">
+
+
+
+
+            <div class="form">
+                <form action="#">
+                    email <input type="email" name="" id="">
+                    <input type="" name="" id="" pattern="[0-9]{3}-[0-9]{2}">
+                   Full Name <input type="text" id="full" placeholder="Enter Your First Name" > <br>
+                   Last Name <input type="text" id="last" placeholder="Enter Your Last Name"><br>
+                   Age <input type="number" id="age"  max="99" min="1"><br>
+                   Gender  <br>
+                   
+                   MAle<input type="radio" name="Gender" value="Male"> <br>
+                   FEMALE<input type="radio" name="Gender" value="Female"> <br>
+                 PREFER NOT TO SAY  <input type="radio" name="Gender" value="prefer Not TO say"><br> 
+                    <input type="submit" id="submit" onclick="valid()">
+                   <br> 
+                </form>
+        </div>    
+
+
+
+
+        <p class="cont1">  ENTER THE NUMBER YOU WANT FACTORIAL 
+        </p>
+
+            <input type="number" min="0" id="fact" placeholder="NUMBER" onsubmit="factorial()">
+            <button class="submit" onclick="factorial()">Submit</button>
+            <p id="result">
+
+            </p>
+    </body>
+    <script>
+let x=prompt('Enter Your Age in Numbers');
+{
+    if(x<16 && x>0){
+        alert("minor");
+    }
+    else if (x === '') {
+        // display error and ask again
+        alert("Cannot proceed further without entering your age");     
+         }
+}
+
+
+
+        let btn= document.getElementById('full');
+        let btn2= document.getElementById('last');
+        let btn3= document.getElementById('age');
+        let fact=document.getElementById('fact');
+        let result=document.getElementById('result');
+        let f
+        function factorial(){
+             if(fact.value<0 ||fact.value===''){
+                 alert('enter valid number');
+             }
+           else if(fact.value==0|| fact.value==1){
+                result.innerHTML=" FActorial of  " +fact.value+"is 1";
+            }
+            else{
+                for (i = 1; i <= fact.value; i++) {
+             factresult*= i;
+             result.innerHTML=`The factorial of `+fact.value+` is `+factresult;
+            }
+            }
+        } 
+
+  function valid(){
+    if(btn.value===""){
+        alert("FILL YOUR FIRST NAME")
+    }
+    if(btn2.value===""){
+        alert("FILL YOUR Last NAME")
+    }
+    if(btn3.value<<0 && btn3.value>>99){
+
+        alert("FILL YOUR correct age")
+    }
+}
+    </script>
+    </html>

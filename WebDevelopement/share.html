@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share On Whatsapp</title>
+</head>
+<body>
+    
+    <button id="Whatsapp-share"> Share to Whatsapp</button>
+</body>
+
+<script>
+    let content = "UTHJAA GADDI";
+    let whtsappURl="whatsapp://send?text="+encodeURIComponent(content)
+    document.getElementById('Whatsapp-share').addEventListener("click",()=>{
+window.location.href=whtsappURl;
+})
+
+</script>
+</html>

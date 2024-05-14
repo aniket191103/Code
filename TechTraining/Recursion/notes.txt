@@ -1,0 +1,6 @@
+ Recursion 
+   3 principles  of recursion: 
+   -Base case: a simple, self-contained problem that can be solved without further recursion. 
+   This is the stopping point for recursion. 
+    -
+   

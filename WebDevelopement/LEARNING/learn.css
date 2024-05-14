@@ -1,0 +1,26 @@
+.store{
+    font-family: 'Ubuntu', sans-serif;
+    width: 300px;
+    border: 15px  solid green;
+    padding: 50px;
+    margin: 20px;
+    /* float: right; */
+    clear: both;
+
+}
+#A{
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 2px;
+    float: left;
+}
+#b{
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 1px;
+    float: left;
+
+}
+

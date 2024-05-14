@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="func n loops.js"> -->
+</head>
+<style>
+
+    body{
+        background-color: blue;
+        font-size: 34px;
+
+    }
+#mydrop{
+    display:none;
+}
+</style>
+
+<body>
+    <h1 id="h">i am blank :)</h1>
+
+
+    <div class="container">
+        <div class="dropdown" id="dropdown">
+            <button class="btn" id="btn" onclick="dropdown()" >   dropdown</button>
+            <button class="btn" id="btn" onclick="dropup()">dropup</button>
+           <li id="mydrop">
+               <a href="">haha</a> <br>
+               <a href="">haha</a> <br>
+               <a href="">haha</a> <br>
+            </li> 
+        </div>
+
+
+    </div>
+</body>
+<script>
+    function dropdown()
+{
+let drop=document.getElementById('mydrop');
+if(drop.style.display==='none')
+{
+    drop.style.display='block';
+}
+else if(drop.style.display1==='block')
+{
+    drop.style.display='none';
+}
+}
+
+
+let v = 45;
+// console.log(v); 
+//  let b = prompt("whats ypur age");
+//  document.getElementById('h').innerHTML =b;
+//  alert(b);
+// function greeting( ){
+    // let name= prompt("what is your name");
+    // console.log("hello"+"  " +name);
+// }
+// greeting()
+
+let student={
+    first :'aniket',
+    last: 'srivastava',
+    age:20,
+    studentinfo: function (){
+        return this.first +'\n'+ this.last;
+    }
+}
+// console.log(student.first  +student.last)
+// student.last='suiiii';
+// console.log(student.last);
+// console.log(student.studentinfo()) 
+// let age = prompt("whats your age  nigaa");
+let age= 10;
+if((age<=18) &&(age>=35)){
+    cosnole.console.log(("audiencee my"));
+
+}
+else
+{
+    console.log("not my");
+}
+// let text;
+let cas=1
+// prompt("enter your case no.");
+switch(cas)
+{
+    case "1":
+        {
+        text ="case 1";
+        break;
+    }
+        case "2":
+        {
+            text ="case 2";
+            break ;
+        
+        }
+        case "3":{
+        text ="case 3";
+            break;
+         }
+
+        default: {
+        text ="bhess di ";
+        break;
+            }
+
+}
+// console.log(text);
+
+let aniket=[
+    {
+name:"aniket",
+class:12,
+age:12,
+    },
+
+    {
+        name:"ehhe",
+        age :23,
+        class:11,
+    }
+]
+let str= JSON.stringify(aniket)
+console.log(str);
+console.log(JSON.parse(str));
+</script>
+</html>

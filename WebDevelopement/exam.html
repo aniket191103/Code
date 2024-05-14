@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="btn">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium perspiciatis, maiores magni, enim nam iusto ea optio ex neque quo eveniet mollitia sit? Iure odit ducimus vitae non nobis praesentium.
+        <p id="btn">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, iste. Ipsum magnam eligendi modi dolor vero veniam tempore enim.
+            <button id="btn">
+                click
+            </button>
+        </p>
+    </div>
+</body>
+<script>
+
+    function Tag(){
+        // event.stopP`ropagation();
+        alert(this.tagName)
+    }
+     
+ var elems = document.querySelectorAll("div, p, button");
+ for(let elem of elems) {
+ elem.addEventListener("click", Tag);
+ }
+</script>
+</html>

@@ -1,0 +1,30 @@
+a{
+text-decoration: none;
+padding: 10px;
+margin:100px auto;
+border: 5px solid black;
+background-color: solid green;
+
+
+}
+a:hover{
+    color: beige;
+}
+a:visited{
+    color: blueviolet;
+}
+a:active{
+    color: aquamarine;
+}
+.b{
+    cursor: pointer;
+font-family:'Times New Roman', Times, serif;
+font-weight: bolder;
+}
+.pq{
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px;
+    margin: 10px auto;
+    border: 5px solid red;
+    display: inline-block;
+}

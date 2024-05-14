@@ -1,0 +1,25 @@
+
+.nav {
+    
+    text-decoration: none;
+}
+
+.nav li{
+    list-style: none;
+    float: left;
+}
+ ul {
+    overflow: hidden;
+    background-color: rgb(40, 142, 142);
+    padding: 17px;
+    
+
+}
+.nav li a{
+    padding: 3px;
+    margin: 10px;
+
+}
+.inp{
+    float: right;
+}

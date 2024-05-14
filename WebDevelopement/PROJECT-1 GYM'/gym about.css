@@ -1,0 +1,69 @@
+body{
+    /* background-image: url(backgrnd.jpg); */
+    background-size: cover;
+    background-color: black;
+
+}
+.para{
+    color: white;
+    font-size: 23px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+background-color: darkgray;
+font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+padding: 5px;
+border-radius: 8px;
+}
+.container
+{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+width: 100%;
+}
+.box1{
+margin: 15px;
+flex: 1;
+width: 50%;
+height: 260px;
+color: white;
+/* background-image: url(gym\ abt\ bg.jpg); */
+}
+.box1 h3{
+text-align: center;
+font-size:24px ;
+color: tomato;
+}
+.box2{
+flex: 1;
+width: 50%;
+height: 260px;
+color: white;
+/* background-image: url(gym\ abt\ bg.jpg); */
+margin: 15px;
+}
+.box2 h3{
+text-align: center;
+font-size:24px ;
+color: tomato;
+}
+.h1{
+background-color: red;
+color: black;
+font: 23px;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+img{
+width: 100%;
+height: 300px;
+}
+.abt1{
+font-size: 15px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.abt2{
+font-size: 15px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

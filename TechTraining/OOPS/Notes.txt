@@ -1,0 +1,14 @@
+Abstract class 
+Act as a Parent class . having common feature , there is  no need to create object containing commmon things
+
+.> It is just a normal classs , only object creation is restricted , so it has variables,methods ,constructor also  have abstract method
+.>Single  inheritance
+
+
+
+
+
+Interface 
+its just a contract  / standard/ what to do 
+.>  Constant   +Abstract method only   ,, 100 % abstract by default
+.> Multiple inheritance 

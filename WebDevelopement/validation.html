@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .nav {
+display: flex;
+background-color:black;
+    }
+    .nav li{
+        padding: 12px;
+        margin: 6px;
+        color: white;
+        list-style: none
+        
+    }
+    .nav li a {
+         color:white;
+         text-decoration: none;
+    }
+
+    .nav li a :hover {
+        color:black
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="form">
+            <form action="">
+                Full Name:<input type="text"  id="full" onsubmit="submit()"> <br>
+                Last Name:<input type="text"  id="last" onsubmit="submit()"> <br>
+                Age: <input type="number" >
+                <br>
+                Volvo<input type="radio" name="cars" value="cars">
+                Bmw <input type="radio" name="cars" value="cars">
+               <button onclick="valid()"> Submit</button>
+            </form>
+
+            <button onclick="factorial()"> Factorial</button>
+
+            <p id="result"></p>
+        </div>
+    </div>
+</body>
+
+<script>
+    function valid(){
+        // alert("hi")
+        let fullname = document.getElementById("full").value;
+        let lastname = document.getElementById("last").value;
+        if (fullname === ""){
+            alert("Enter full name");
+        }
+        else if(lastname === ""){
+            alert(" ENter last name")
+        }
+
+    }
+
+
+const prompt1= require('prompt-sync')();
+
+function factorial (){
+    let fact =1;
+    let x = prompt("Enter Number ");
+    if(x==0 ||x==1){
+       document.getElementById('result').innerHTML=1;
+    }
+    else if (x>1){
+        for (i=x;i>=1;i--){
+            fact*=i
+            document.getElementById('result').innerHTML="Factorial is "+fact+" Of "+x;
+        }
+    }
+}
+</script>
+
+
+
+<div class="nav">
+    <li><a href="#home" >HOME</a> </li>
+    <li> <a href="#About">ABOUT</a> </li>
+    <li> SERVICE</li>
+    <li>CONTACT US</li>
+</div>
+
+</html>

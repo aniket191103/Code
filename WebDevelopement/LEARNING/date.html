@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head
+>
+<style>
+    .container{
+        background-color: aqua;
+        font-size: 23px;
+        padding: 4px;
+        border: 3px solid grey;
+        border-radius: 4px;
+    }
+    #time{
+        text-decoration-thickness: 19px;
+    }
+</style>
+<body>
+    
+    <div class="container">
+        <h1>this is a container</h1>
+        current time is <span id="time" ></span>
+
+    </div>
+    <script>
+        console.log('THE DATE AND TIME IS');
+        let now= new Date();
+        console.log(now);
+        let newdate= new Date("2020-12-11 4:49");
+        console.log(newdate);
+        setInterval(updatetime,1000);
+         
+        function updatetime(){
+            time.innerHTML= new Date();
+        }
+        
+
+    </script>
+    
+</body>
+</html>
