@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<style>
+    .flexbox{
+        display: flex;
+
+    }
+    h2{
+        font-size: 34px;
+        color: black;
+        font-weight: bolder;
+    }
+    button{
+        padding: 5px;
+        margin: 12px;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2 id="con">
+            BUTTON COLOR CHNAGING
+        </h2>
+
+        <div class="flexbox">
+            <form action="">
+                <select name="Select" id="" onchange="ChangeColor(this)">
+                 <option value="reset">RESET</option>
+                <option value="red">RED</option> 
+                <option value="green">GREEN</option> 
+                <option value="random">RANDOM</option> 
+                </select>
+                <button type="button" class="btn btn-primary">Weee!!!</button>
+                <button type="button" class="btn btn-danger">hui hui</button>
+                <button type="button" class="btn btn-success"> yahoo!</button>
+                <button type="button" class="btn btn-warning">SSup</button>
+            </form>
+        </div>
+
+
+        <button class="link"><a href="land.html"> lick</a>  </button>
+    </div>
+</body>
+<script>
+    let allbutton= document.getElementsByTagName('button')
+    let copyAllbutton=[]
+    let btn=document.getElementById('con');
+    for(let i=0;i<allbutton.length;i++){
+    copyAllbutton.push(allbutton[i].classList[1]);
+    console.log(copyAllbutton);
+    }
+     function ChangeColor(color){
+
+        //  console.log(color.value);
+
+
+         if(color.value==="red"){
+            btn.style.backgroundColor='black';
+        btn.style.color='green'
+            ChangeColorRed();
+         }
+         else if(color.value==="green")
+         {
+                ChangeColorGreen();
+         }
+         else if(color.value==="reset"){
+                 reset();
+                //  btn.style.backgroundColor='white';
+
+         }
+         else if(color.value==="random")
+         {
+            random();
+            // btn.style.backgroundColor=allbutton[i];
+
+         }
+        }
+        
+
+        function ChangeColorRed(){
+            let allbutton= document.getElementsByTagName('button')
+            for(let i =0;i<allbutton.length;i++){
+            allbutton[i].classList.remove(allbutton[i].classList[1]);
+            allbutton[i].classList.add("btn-danger");
+        }
+        }
+        function ChangeColorGreen(){
+            let allbutton= document.getElementsByTagName('button')
+            for(let i =0;i<allbutton.length;i++){
+            allbutton[i].classList.remove(allbutton[i].classList[1]);
+            allbutton[i].classList.add("btn-success");
+        }
+
+    }
+
+    function random()
+    {
+         let DB=['btn-danger','btn-success','btn-warning','btn-primary','btn btn-secondary','btn btn-dark'];
+         for(let i =0;i<allbutton.length;i++)
+         {
+            let random= Math.floor(Math.random()*4);
+            allbutton[i].classList.remove(allbutton[i].classList[1]);
+            allbutton[i].classList.add(DB[random]);
+         }
+    }
+    function reset(){
+        for(let i=0;i<allbutton.length;i++){
+            allbutton[i].classList.remove(allbutton[i].classList[1]);
+            allbutton[i].classList.add(copyAllbutton[i]);
+        }
+    }
+</script>
+</html>
